@@ -37,26 +37,68 @@
     />
 
     <link rel="stylesheet" href="./styles/main.css" />
-    <title>Portfolio of Patricia</title>
+    <title>Portfolio of Yuliia</title>
   </head>
-  <body>
+  <body id="main-page">
+    <!-- ---------------Navbar----------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img class="image-logo" src="./img/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="index.html"
+                title="Homepage"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" title="page about me"
+                >About me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact" title="contact page"
+                >Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="header">
-      <p class="greetings">🖐 Hi I am</p>
-      <h1>Patricia Pereira</h1>
-      <p class="post">Frontend Developer, based in Portugal.</p>
+      <p class="greetings">🖐 Hello I am</p>
+      <h1 class="name-presentation">Yuliia Demchenko</h1>
+      <p class="post">Frontend Developer, based in Europe.</p>
       <a href="#"> Get Started</a>
     </div>
     <p class="head-projects">
       Featured Project which my best projects be choice to show
     </p>
-    <div class="container">
-      <!-- --------Yougurt Project--------- -->
+    <div class="projects container">
+      <!-- --------Sport Project--------- -->
       <div class="row">
         <div class="col d-none d-lg-block">
-          <img src="./img/yogurt.png" alt="yogurt" class="img-fluid" />
+          <img src="./img/sport-website.png" alt="sport" class="img-fluid" />
         </div>
         <div class="col project-description">
-          <h2>Yogurt Project</h2>
+          <h2>Sport Website</h2>
           <p>
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts. Separated they
@@ -78,20 +120,29 @@
             live in Bookmarksgrove right at the coast of the Semantics, a large
             language ocean. A small river named Duden flows by
           </p>
-          <a href="#" class="btn">View detail project</a>
+          <a
+            href="https://tourmaline-eclair-e53fcb.netlify.app/"
+            target="_blank"
+            class="btn"
+            >View detail project</a
+          >
         </div>
         <div class="col d-none d-lg-block">
-          <img src="./img/weather.png" alt="yogurt" class="img-fluid" />
+          <img src="./img/weather-app.png" alt="weather" class="img-fluid" />
         </div>
       </div>
 
-      <!-- --------------Dictionary App -------- -->
+      <!-- --------------Portfolio -------- -->
       <div class="row">
         <div class="col d-none d-lg-block">
-          <img src="./img/dictionary.png" alt="yogurt" class="img-fluid" />
+          <img
+            src="./img/Portfolio-website.png"
+            alt="portfolio"
+            class="img-fluid"
+          />
         </div>
         <div class="col project-description">
-          <h2>Dictionary App</h2>
+          <h2>Portfolio</h2>
           <p>
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts. Separated they
@@ -102,5 +153,26 @@
         </div>
       </div>
     </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/yuceno4ek/" target="_blank"
+            ><i class="fa-brands fa-instagram fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:yuceno4ek@gmail.com" target="_blank"
+            ><i class="fa-solid fa-envelope fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=100008785262753"
+            target="_blank"
+            ><i class="fa-brands fa-facebook fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
