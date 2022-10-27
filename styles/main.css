@@ -20,8 +20,14 @@ body {
   padding-top: 276px;
   margin-bottom: 0;
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--font-playfair-);
+}
+h1 {
   font-size: 96px;
   font-weight: bold;
   margin-bottom: 24px;
@@ -34,11 +40,43 @@ h1 {
 a {
   text-decoration: none;
 }
-
+.head-projects {
+  margin: 127px 0 82px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
 .header a {
   padding: 18px 46px;
   background-color: var(--main-color-);
   color: white;
   font-size: 18px;
   border-radius: 4px;
+}
+.container h2 {
+  padding: 177px 0 55px 0;
+  font-size: 64px;
+  font-weight: bold;
+}
+.container p {
+  width: 514px;
+  font-size: 16px;
+  opacity: 70%;
+  text-align: left;
+  padding-left: 61px;
+  line-height: 1.7;
+}
+.container a {
+  padding: 18px 25px;
+  border: 1px solid var(--main-color-);
+  margin: 50px 230px 200px 0;
+  color: var(--main-color-);
+}
+@media (max-width: 960px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .container a {
+    margin: 10px 0 0 0;
+  }
 }
