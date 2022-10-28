@@ -15,9 +15,7 @@ body {
 .image-logo {
   height: 100px;
 }
-.navbar {
-  background-color: transparent !important;
-}
+
 .header {
   background-color: var(--bg-color);
   height: 900px;
@@ -90,11 +88,15 @@ a {
   padding-left: 61px;
   line-height: 1.7;
 }
-.projects a,
-.let-talk a {
+.projects a {
   padding: 18px 25px;
   border: 1px solid var(--main-color-);
   margin: 50px 230px 200px 0;
+  color: var(--main-color-);
+}
+.let-talk a {
+  padding: 18px 25px;
+  border: 1px solid var(--main-color-);
   color: var(--main-color-);
 }
 .projects a:hover,
@@ -102,15 +104,7 @@ a {
   background-color: var(--main-color-);
   color: white;
 }
-@media (max-width: 960px) {
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-  .projects a {
-    margin: 10px 0 0 0;
-  }
-}
+
 .about-me {
   margin-top: 200px;
 }
@@ -118,7 +112,6 @@ a {
   margin: 29px 0 28px 0;
 }
 .about-me .text-about-me {
-  width: 475px;
   opacity: 75%;
 }
 .about-me a {
@@ -159,4 +152,33 @@ li {
 }
 li a {
   color: var(--main-color-);
+}
+@media (max-width: 960px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .projects a {
+    margin: 10px 0 0 0;
+  }
+  .text-about-me {
+    width: auto;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact a {
+    margin: 0 auto;
+  }
+  .communicate h2 {
+    padding: 25px 0 0 0;
+    text-align: center;
+  }
 }
