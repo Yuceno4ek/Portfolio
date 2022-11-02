@@ -153,6 +153,18 @@ li {
 li a {
   color: var(--main-color-);
 }
+#work h1 {
+  margin-top: 130px;
+}
+.carousel {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.carousel img {
+  border-radius: 20px;
+}
+
 @media (max-width: 960px) {
   .project-description {
     padding: 0;
