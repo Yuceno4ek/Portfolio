@@ -12,9 +12,7 @@ body {
 #main-page {
   text-align: center;
 }
-#work {
-  background-color: var(--bg-color);
-}
+
 .image-logo {
   height: 75px;
 }
@@ -24,6 +22,7 @@ body {
 .header {
   background-color: var(--bg-color);
   height: 700px;
+  width: 100%;
 }
 .greetings {
   font-size: 36px;
@@ -57,9 +56,8 @@ nav li {
   transition: color 3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-nav li:hover {
-  box-shadow: inset 100px 0 0 0 var(--main-color-);
-  color: white;
+nav a:hover {
+  color: white !important;
 }
 .head-projects {
   margin: 127px 0 82px 0;
@@ -82,7 +80,7 @@ nav li:hover {
   transition: all 0.3s ease-in-out;
 }
 .projects img {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .projects img:hover {
   transform: translateY(-5px);
@@ -134,7 +132,7 @@ nav li:hover {
 }
 .wrapper {
   background-color: var(--bg-color);
-  border-radius: 20px;
+  border-radius: 10px;
   width: 1160px;
   height: 200px;
   display: flex;
@@ -177,7 +175,7 @@ li a {
   margin-top: 50px;
 }
 .carousel img {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 footer i {
   padding: 17px;
@@ -218,4 +216,47 @@ footer i:hover {
     padding: 25px 0 0 0;
     text-align: center;
   }
+}
+@media (min-width: 990px) {
+  nav li:hover {
+    box-shadow: inset 100px 0 0 0 var(--main-color-);
+  }
+}
+@media (max-width: 990px) {
+  header h1 {
+    font-size: 60;
+  }
+  .projects h2 {
+    font-size: 50px;
+  }
+  .projects a {
+    margin-bottom: 30px;
+  }
+  .communicate h2 {
+    padding: 20px 0 0;
+  }
+  .communicate p {
+    padding: 0;
+  }
+  #work h2,
+  #work p,
+  #about p,
+  #about h2 {
+    text-align: center;
+  }
+  #about p,
+  #work p {
+    padding: 10px 0 10px;
+  }
+  #about .col {
+    text-align: center;
+  }
+  #carouselExampleDark {
+    width: fit-content;
+  }
+  #work h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
 }
