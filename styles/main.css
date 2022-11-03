@@ -12,13 +12,18 @@ body {
 #main-page {
   text-align: center;
 }
-.image-logo {
-  height: 100px;
+#work {
+  background-color: var(--bg-color);
 }
-
+.image-logo {
+  height: 75px;
+}
+.collapse {
+  justify-content: flex-end;
+}
 .header {
   background-color: var(--bg-color);
-  height: 900px;
+  height: 700px;
 }
 .greetings {
   font-size: 36px;
@@ -48,6 +53,14 @@ h5 {
 a {
   text-decoration: none;
 }
+nav li {
+  transition: color 3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav li:hover {
+  box-shadow: inset 100px 0 0 0 var(--main-color-);
+  color: white;
+}
 .head-projects {
   margin: 127px 0 82px 0;
   font-size: 18px;
@@ -66,6 +79,7 @@ a {
   border: 1px solid var(--main-color-);
   background-color: transparent;
   color: var(--main-color-);
+  transition: all 0.3s ease-in-out;
 }
 .projects img {
   border-radius: 5px;
@@ -103,6 +117,7 @@ a {
 .let-talk a:hover {
   background-color: var(--main-color-);
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-me {
