@@ -202,6 +202,9 @@ footer i:hover {
   color: white;
   transition: all 0.5s ease-in-out;
 }
+.footer-paragraph {
+  font-style: italic;
+}
 @media (max-width: 960px) {
   .project-description {
     padding: 0;
@@ -305,5 +308,8 @@ footer i:hover {
   }
   .projects p {
     width: auto;
+  }
+  .footer-paragraph {
+    font-size: 12px;
   }
 }
