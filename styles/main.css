@@ -180,7 +180,18 @@ li a {
   padding: 0;
   margin: 0;
 }
+.email_link,
+.github-link {
+  text-decoration: none;
+  color: var(--main-black-color);
+  font-weight: 500;
+}
+.email_link:hover,
+.github-link:hover {
+  color: var(--main-color-);
+}
 footer i {
+  margin-top: 40px;
   padding: 17px;
   background-color: var(--bg-color);
   border-radius: 50%;
